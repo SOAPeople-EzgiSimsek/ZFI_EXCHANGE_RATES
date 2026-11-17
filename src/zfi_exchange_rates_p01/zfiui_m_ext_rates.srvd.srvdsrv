@@ -1,0 +1,4 @@
+@EndUserText.label: 'Manuel Kur Çekme Uygulaması SB'
+define service ZFIUI_M_EXT_RATES {
+  expose ZFIC_M_EXT_RATES as Rates;
+}

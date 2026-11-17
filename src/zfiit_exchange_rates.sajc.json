@@ -1,0 +1,25 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Merkez Bankası Kurları Entegrasyonu JCE",
+    "originalLanguage": "tr",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "className": "ZCL_FI_EXCHANGE_RATES"
+  },
+  "parameters": [
+    {
+      "name": "SO_WAERS"
+    },
+    {
+      "name": "SO_RATE"
+    },
+    {
+      "name": "PR_KURTR"
+    },
+    {
+      "name": "PR_INSTR"
+    }
+  ]
+}

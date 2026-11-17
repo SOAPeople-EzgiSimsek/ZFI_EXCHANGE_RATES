@@ -1,0 +1,10 @@
+projection;
+strict ( 2 );
+use side effects;
+define behavior for ZFIC_M_EXT_RATES alias rate
+use etag
+{
+  use create;
+  use update;
+  use delete;
+}

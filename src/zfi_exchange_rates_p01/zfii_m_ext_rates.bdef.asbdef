@@ -1,0 +1,40 @@
+unmanaged implementation in class zbp_fii_m_ext_rates unique;
+strict ( 2 );
+
+define behavior for ZFII_M_EXT_RATES alias rate
+late numbering
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  //
+  ////  create ( authorization : global );
+  //create;
+  //  update;
+  //  delete;
+
+
+  create ( authorization : global );
+
+
+  update ( features : instance );
+  delete ( features : instance );
+
+  field ( readonly : update ) kurtr,instr;
+  field ( mandatory : create ) kurtr,instr;
+  action ( features : instance ) setButtonAct result [1] $self;
+
+  field ( readonly ) Rate,
+                     waers1,waers2,rundt,runtm;
+  mapping for zfit_m_ext_rates
+    {
+      Xguid   = xguid;
+      Rate    = rate;
+      waers1  = Waers1;
+      waers2  = Waers2;
+      kurtr   = kurtr;
+      instr   = instr;
+      rundt   = rundt;
+      runtm   = runtm;
+    }
+}

@@ -1,0 +1,75 @@
+@Metadata.layer: #CUSTOMER
+@UI.headerInfo: {
+    typeName: 'Manuel Kur',
+    typeNamePlural: 'Manuel Kurlar',
+    title: {
+        type: #STANDARD,
+        value: 'Xguid'
+    },
+    description: {
+        type: #STANDARD,
+        value: 'Rate'
+    }
+}
+annotate entity ZFIC_M_EXT_RATES
+    with 
+{
+  /* =========================
+     FACET – HEADER
+     ========================= */
+  @UI.facet: [
+    {
+      id: 'Header',
+      purpose: #STANDARD,
+      position: 10,
+      label: 'Kur Bilgileri',
+      type: #IDENTIFICATION_REFERENCE
+    }
+  ]
+
+  /* =========================
+     LIST REPORT – LINE ITEM
+     ========================= */
+  @UI.lineItem: [
+    { position: 10, value: 'Waers1', label: 'Kaynak Para Birimi' },
+    { position: 20, value: 'Waers2', label: 'Hedef Para Birimi', hidden: true },
+    { position: 30, value: 'Rate',   label: 'Kur' },
+    { position: 40, value: 'Kurtr',  label: 'TCMB Tarihi' },
+    { position: 50, value: 'Instr',  label: 'Giriş Tarihi' },
+    { position: 60, value: 'Rundt',  label: 'Yaratma Tarihi' },
+    { position: 70, value: 'Runtm',  label: 'Yaratma Saati' }
+  ]
+
+  /* =========================
+     OBJECT PAGE – IDENTIFICATION
+     ========================= */
+  @UI.identification: [
+    { position: 10, value: 'Waers1', label: 'Kaynak Para Birimi'  },
+    { position: 20, value: 'Waers2', label: 'Hedef Para Birimi' ,hidden: true },
+    { position: 30, value: 'Rate',   label: 'Kur ' },
+    { position: 40, value: 'Kurtr',  label: 'TCMB Tarihi' },
+    { position: 50, value: 'Instr',  label: 'Sisteme Giriş Tarihi' },
+    { position: 60, value: 'Rundt',  label: 'Yaratma Tarihi' },
+    { position: 70, value: 'Runtm',  label: 'Yaratma Saati' }
+  ]
+
+  /* =========================
+     SELECTION FIELDS
+     ========================= */
+  @UI.selectionField: [{ position: 10 }]
+  Waers1;
+
+  @UI.selectionField: [{ position: 20 }]
+    @UI.hidden: true
+  Waers2;
+
+  @UI.selectionField: [{ position: 30 }]
+  Kurtr;
+
+
+
+  @UI.hidden: true
+  Xguid;
+
+    
+}

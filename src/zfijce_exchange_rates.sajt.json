@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Merkez Bankası Kurları Entegrasyonu JT",
+    "originalLanguage": "tr",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "catalogName": "ZFIIT_EXCHANGE_RATES"
+  },
+  "parameters": {
+    "singleValueParameters": [
+      {
+        "name": "PR_INSTR",
+        "value": ""
+      },
+      {
+        "name": "PR_KURTR",
+        "value": ""
+      }
+    ],
+    "valueRangesParameters": [
+      {
+        "name": "SO_RATE",
+        "valueRanges": []
+      },
+      {
+        "name": "SO_WAERS",
+        "valueRanges": []
+      }
+    ]
+  }
+}

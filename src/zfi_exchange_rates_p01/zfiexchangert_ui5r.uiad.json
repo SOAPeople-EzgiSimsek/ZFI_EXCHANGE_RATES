@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Manuel Kur Çekme Programı",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Manuel Kur Çekme Programı"
+  },
+  "ui5AppDetails": {
+    "appId": "com.soapeople.zfiexchangerates"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_22ED541CFD627FB92FC7CA4023B915923613BF2D_TM",
+    "semanticObject": "zfiexchangerates",
+    "action": "manage",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_22ED541CFD627FB92FC7CA4023B915923613BF2D_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Manuel Kur Çekme Programı",
+        "subtitle": "Manuel Kur Çekme Programı"
+      }
+    }
+  ]
+}
